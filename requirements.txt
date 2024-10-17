@@ -1,3 +1,13 @@
-import requests
-import json
-import datetime
+certifi==2024.8.30
+charset-normalizer==3.4.0
+click==8.1.7
+colorama==0.4.6
+flake8==7.1.1
+idna==3.10
+loguru==0.7.2
+mccabe==0.7.0
+pycodestyle==2.12.1
+pyflakes==3.2.0
+requests==2.32.3
+urllib3==2.2.3
+win32-setctime==1.1.0

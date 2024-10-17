@@ -1,36 +1,36 @@
 {
-    "forecast_location": "Paris(FR)",
-    "forecast_min_temp": 12.35,
-    "forecast_max_temp": 17.85,
+    "forecast_location": "Arrondissement de Marseille(FR)",
+    "forecast_min_temp": 14.58,
+    "forecast_max_temp": 22.3,
     "forecast_details": [
         {
             "date": "2024-10-17",
-            "avg_temp": 16.8,
+            "temp": 21.0,
             "measure_count": 3
         },
         {
             "date": "2024-10-18",
-            "avg_temp": 15.5,
+            "temp": 15.8,
             "measure_count": 8
         },
         {
             "date": "2024-10-19",
-            "avg_temp": 14.7,
+            "temp": 17.6,
             "measure_count": 8
         },
         {
             "date": "2024-10-20",
-            "avg_temp": 15.1,
+            "temp": 17.9,
             "measure_count": 8
         },
         {
             "date": "2024-10-21",
-            "avg_temp": 15.1,
+            "temp": 18.3,
             "measure_count": 8
         },
         {
             "date": "2024-10-22",
-            "avg_temp": 13.9,
+            "temp": 18.1,
             "measure_count": 5
         }
     ]

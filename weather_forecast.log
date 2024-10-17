@@ -1,0 +1,43 @@
+2024-10-17 14:37:38.373 | INFO     | __main__:get_weather_data:15 - Données météo récupérées avec succès.
+2024-10-17 14:37:38.373 | INFO     | __main__:generate_forecast_json:68 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 14:37:38.373 | WARNING  | __main__:main:88 - Aucune donnée météo à afficher.
+2024-10-17 14:41:20.376 | INFO     | __main__:get_weather_data:15 - Données météo récupérées avec succès.
+2024-10-17 14:41:20.391 | WARNING  | __main__:main:86 - Aucune donnée à afficher ! 
+2024-10-17 14:42:34.001 | INFO     | __main__:get_weather_data:15 - Données météo récupérées avec succès.
+2024-10-17 14:42:34.016 | INFO     | __main__:generate_forecast_json:69 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 14:42:34.016 | WARNING  | __main__:main:89 - Aucune donnée météo à afficher.
+2024-10-17 14:43:54.668 | INFO     | __main__:get_weather_data:22 - Données météo récupérées avec succès.
+2024-10-17 14:43:54.668 | INFO     | __main__:generate_forecast_json:73 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 14:43:54.668 | INFO     | __main__:main:92 - Prévisions météo générées avec succès.
+2024-10-17 14:57:53.355 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 14:57:53.371 | INFO     | __main__:generate_forecast_json:74 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 14:57:53.372 | INFO     | __main__:main:94 - Prévisions météo générées avec succès.
+2024-10-17 15:01:30.820 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:01:30.820 | INFO     | __main__:generate_forecast_json:74 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:01:30.820 | INFO     | __main__:main:94 - Prévisions météo générées avec succès.
+2024-10-17 15:04:39.660 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:04:39.675 | INFO     | __main__:generate_forecast_json:73 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:04:39.675 | INFO     | __main__:main:93 - Prévisions météo générées avec succès.
+2024-10-17 15:11:07.381 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:11:07.404 | INFO     | __main__:generate_forecast_json:75 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:11:07.405 | INFO     | __main__:main:95 - Prévisions météo générées avec succès.
+2024-10-17 15:11:29.334 | ERROR    | __main__:get_weather_data:26 - Erreur lors de l'appel à l'API: 404
+2024-10-17 15:11:44.567 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:11:44.579 | INFO     | __main__:generate_forecast_json:75 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:11:44.580 | INFO     | __main__:main:95 - Prévisions météo générées avec succès.
+2024-10-17 15:16:04.231 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:16:04.235 | INFO     | __main__:generate_forecast_json:74 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:16:04.235 | INFO     | __main__:main:94 - Prévisions météo générées avec succès.
+2024-10-17 15:18:45.285 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:18:45.317 | INFO     | __main__:generate_forecast_json:75 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:18:45.318 | INFO     | __main__:main:95 - Prévisions météo générées avec succès.
+2024-10-17 15:23:39.399 | ERROR    | __main__:get_weather_data:26 - Erreur lors de l'appel à l'API: 400
+2024-10-17 15:23:47.568 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:23:47.577 | INFO     | __main__:generate_forecast_json:74 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:23:47.578 | INFO     | __main__:main:94 - Prévisions météo générées avec succès.
+2024-10-17 15:26:26.049 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:26:26.065 | INFO     | __main__:generate_forecast_json:69 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:26:26.067 | INFO     | __main__:main:89 - Prévisions météo générées avec succès.
+2024-10-17 15:28:09.990 | INFO     | __main__:get_weather_data:23 - Données météo récupérées avec succès.
+2024-10-17 15:28:10.005 | INFO     | __main__:generate_forecast_json:80 - Les prévisions ont été écrites dans le fichier 'results.json'.
+2024-10-17 15:28:10.005 | INFO     | __main__:main:100 - Prévisions météo générées avec succès.
