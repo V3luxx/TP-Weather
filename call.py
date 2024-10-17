@@ -14,6 +14,7 @@ def get_weather_data(city, country_code):
         print("Erreur lors de l'appel à l'API:", response.status_code)
         return None
 
+
 def generate_forecast_json(data):
     if data:
         location_code = data['city']['country']
@@ -21,38 +22,50 @@ def generate_forecast_json(data):
         forecast_location = f"{location_city}({location_code})"
         
         forecast_details: dict[int, list[float]] = {}
+        min_temps = []
+        max_temps = []
         
         for forecast in data['list']:
             date_time = forecast['dt_txt']
-            date_formated = datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S").day
-            if not date_formated in forecast_details.keys():
-                forecast_details[date_formated] = []
-            temperature = float(forecast['main']['temp'])
-            forecast_details[date_formated].append(temperature)
             forecast_min_temp = forecast['main']['temp_min']
             forecast_max_temp = forecast['main']['temp_max']
+            temperature = float(forecast['main']['temp'])
+            date_formated = datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S").day
+            # temp min et max
+            min_temps.append(forecast_min_temp)
+            max_temps.append(forecast_max_temp)
+            
+            if date_formated not in forecast_details:
+                forecast_details[date_formated] = []
+            forecast_details[date_formated].append(temperature)
 
-        formatted_forecast_details = []
-        for key, values in forecast.items():
-            formatted_forecast_details.append({
-                "date": date_formated,
-                "temp": temperature,  # Remettre la valeur à l'échelle d'origine
-                "measure_count": values['count']
-            })
+        format_forecast_details = []
+        for day, temperatures in forecast_details.items():
+            if temperatures:  # Vérifie que la liste n'est pas vide
+                avg_temp = sum(temperatures) / len(temperatures)
+                date_str = f"2024-10-{day:02d}"  
+                format_forecast_details.append({
+                    "date": date_str,
+                    "avg_temp": round(avg_temp, 1),
+                    "measure_count": len(temperatures)  
+                })
 
         # Construction de l'objet JSON final
         forecast_json = {
             "forecast_location": forecast_location,
-            "forecast_min_temp": forecast_min_temp,
-            "forecast_max_temp": forecast_max_temp,
-            "forecast_details": formatted_forecast_details
+            "forecast_min_temp": min(min_temps),  # Température minimale sur la période
+            "forecast_max_temp": max(max_temps),  # Température maximale sur la période
+            "forecast_details": format_forecast_details
         }
+        filename = "results.json"
+        with open(filename, 'w') as json_file:
+            json.dump(forecast_json, json_file, indent=4)  # Indentation pour une meilleure lisibilité
         
-        return forecast_json
-
+            print(f"Les prévisions ont été écrites dans le fichier '{filename}'.")
+    
 def main():
-    city = "Marseille"  # input("Entrez le nom de la ville dont vous voulez connaître la météo : ")
-    country_code = "FR" # input("Entrez le code du pays (exemple: FR) : ")
+    city = input("Entrez le nom de la ville dont vous voulez connaître la météo : ")
+    country_code = input("Entrez le code du pays (exemple: FR) : ")
     weather_data = get_weather_data(city, country_code)
     forecast_json = generate_forecast_json(weather_data)
 
